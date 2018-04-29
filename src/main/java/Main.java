@@ -23,21 +23,15 @@ public class Main {
             } else if (odczyt == 3) {
                 BookData dane = BookData.getInstance();
                 System.out.println(dane.getAllBooks());
-            } else if (odczyt == 4) {
-                List<Book> dane = BookData.getInstance().getAllBooks();
-               //int rok = dane.get(0).getYear();
-                List<Book> bookYear = 0;
+//            } else if (odczyt == 4) {
+//                List<Book> dane = BookData.getInstance().getAllBooks();
+//
+//            }
 
-                for (dane.get(0).getYear() = 0; dane.get(0).getYear()<dane.size(); dane.get(0).getYear()++) {
-                    if (dane.get(0).getYear() < 2005) {
-                    } else if (dane.get(0).getYear() > 2005) {
-                        return;
-                    }
-                }
-                bookYear++;
-            }
         }
     }
+
+}
 
     public static void importBooks() {
         BufferedReader br;
@@ -61,7 +55,7 @@ public class Main {
     }
 
     private static Book createBook(String[] attributes) {
-        return new Book(attributes[0], Integer.parseInt(attributes[1]), Integer.parseInt(attributes[2]));
+        return new Book(attributes[0], (attributes[1]), Integer.parseInt(attributes[2]));
     }
 
 

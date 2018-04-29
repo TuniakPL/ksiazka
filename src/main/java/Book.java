@@ -1,14 +1,14 @@
 public class Book {
 
     private String name;
-    private int ISBN;
+    private String ISBN;
     private int year;
 
     public String getName() {
         return name;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
@@ -16,7 +16,7 @@ public class Book {
         return year;
     }
 
-    public Book(String name, int ISBN, int year) {
+    public Book(String name, String ISBN, int year) {
         this.name = name;
         this.ISBN = ISBN;
         this.year = year;
