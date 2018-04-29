@@ -3,12 +3,10 @@ import java.util.stream.Collectors;
 
 public class BooksFunctions {
 
-    public static void findBookByISBN(){
-        List <Book> books;
-        books.stream()
-                .filter(book -> book.getISBN().equals("321146530"))
-                .collect(Collectors.toList());
-
+    public static Book findBookByISBN(List<Book> books,String ISBN){
+        return books.stream()
+                .filter(book -> book.getISBN().equals(ISBN))
+                .findFirst().get();
     }
 
 

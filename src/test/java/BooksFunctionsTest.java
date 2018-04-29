@@ -18,7 +18,11 @@ public class BooksFunctionsTest {
         books.add(new Book("Patterns of Enterprise Application Architecture", "0321127420", 2002));
         books.add(new Book("Head First Design Patterns", "0596007124", 2004));
     }
-    //@Test
+    @Test
+    public void testForFindBookByISBN(){
+        assertEquals(BooksFunctions.findBookByISBN(books,"0321146530").getISBN(),"0321146530");
+    }
+
 
 
 
