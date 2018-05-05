@@ -24,12 +24,19 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", ISBN=" + ISBN +
-                ", year=" + year +
-                "}\n";
+        return  "   n: " +name + ", " + " I: " + ISBN +", " + " y: " + year +" \n";
 
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
 }
